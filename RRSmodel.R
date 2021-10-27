@@ -1,4 +1,7 @@
-setwd("/Users/jannawilloughby/GDrive/ABMs/captivebreeding-IBM/")  #set working directory
+#this is copied from Janna's Captive Breeding IBM 
+#note, any changes are on my copy only, and will be use soley for practice purposes
+
+setwd("C:/Users/HP/Box/New Computer/Auburn/Data/captivebreeding-IBM/")  #set working directory
 directory = getwd()
 outdir    = paste(directory,"/output/",sep="")                    #directory to save model output  
 source(paste(directory, "/source/FunctionSourcer.R", sep = ''))   #source functions and set source directory
