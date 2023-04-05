@@ -7,8 +7,8 @@ outdir    = paste(directory,"/output/",sep="")                    #directory to 
 source(paste(directory, "/source/FunctionSourcer.R", sep = ''))   #source functions and set source directory
 
 repeats = 1                                                       #number of time to repeat simulations
-plotit  <<- 0  #this is cuz of my plot error                                                   #toggle population size plotting 0=off, 1=on
-species = "crane" #changing species will change following parameters                                               #"crane" "tamarin" "toad" "salmon" "other" (parameters values listed below)
+plotit  <<- 1                                                     #toggle population size plotting 0=off, 1=on
+species = "crane"                                                 #"crane" "tamarin" "toad" "salmon" "other" (parameters values listed below)
 
 #species parameters
 if(species=="crane")  { fecundity.V = 1;   maturity.V  = 5;  lifespan.V  = 23; repro1.V = 1; K.V = 500 }   #fecundity - modified by RRS for each pair
@@ -61,7 +61,6 @@ remove(repeats, K.V, N.V, gens.V, RRS.V, RRSvar.V, r0.V, l.V, nloci.V, countimma
        startcap.V, endcap.V, capfound.V, newfound.V, propnew.V, caplife.V, coffprop.V,poorenv.V, fixedenv.V, lossperct.V, nimmigrants.V,
        propkill.V, equalcaptive.V, allonecaptive.V, capvariation.V,directory, outdir, plotit, species, selection)
 
-r=1 #use the following lines after debugging
 ##run model iterating over parameters in Replicates
 #for(r in 1:nrow(runvars)){ 
 #  RunModel(runvars, r)
