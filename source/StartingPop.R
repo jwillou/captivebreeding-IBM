@@ -40,7 +40,7 @@ StartingPop = function(N, agestage, nloci){
   #      genos[i,columns[n]]   = 0
   #      genos[i,columns[n]+1] = 0
   #      next
-  #    }else if(gtype[i]==1){                      #heterozygous (0,1)
+  #    }else if(gtype[i]==2){                      #heterozygous (0,1)
   #      genos[i,columns[n]]   = 0
   #      genos[i,columns[n]+1] = 1
   #    }else{                                      #homozygous (1,1)
